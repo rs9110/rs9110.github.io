@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+::-moz-selection {
+  color: white;
+  background: #333333;
+  text-shadow: none;
+}
+
+::selection {
+  color: white;
+  background: #333333;
+  text-shadow: none;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("../img/background.jpg");
+  min-height: 100%;
+  opacity: 0.9;
+}
+
+.bgimg-2 {
+  background-image: url("../img/sunset.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("../img/gate.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("../img/fog.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: rgb(199, 199, 199);
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption p.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.content {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify;
+}
+
+.content img {
+  height: 15%;
+  width: 15%;
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
+.content img.about {
+  height: 20%;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid rgb(241, 142, 145);
+  border-radius: 100px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 41%;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  border: 0px;
+  outline: none;
+  background: rgba(241, 130, 134, 0.8);
+}
+
+.content div.skillset {
+  box-shadow: 0 1px 3px;
+  background: white;
+  padding: 20%;
+}
+
+hr {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(80, 255, 177, 0), rgb(241, 142, 145), rgba(80, 255, 177, 0));
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+}
+
+.wrapper {
+  height: 100vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.skills_row {
+  display: inline-flex;
+  padding: 20px 20px;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.service-box {
+  padding: 15px;
+}
+
+/* -------------------------------------------------------------------------
+begin Scroll Down Button
+* ------------------------------------------------------------------------- */
+
+button.scroll_down {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 30px;
+  bottom: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+button.scroll_down:before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: scroll_down_btn-animation 2s infinite;
+  animation: scroll_down_btn-animation 2s infinite;
+  box-sizing: border-box;
+}
+
+@keyframes scroll_down_btn-animation {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scroll_down_btn-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: scroll;
+  }
+}
+
+.web {
+  display: flex;
+  justify-content: space-between;
+}
+
+.graphic {
+  display: flex;
+  justify-content: space-between;
+}
