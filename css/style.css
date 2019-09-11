@@ -116,23 +116,54 @@ body, html {
 }
 
 .btn {
-  background-color: transparent;
-  border: 2px solid rgb(241, 142, 145);
-  border-radius: 100px;
-  font-weight: 400;
-  line-height: 1;
-  margin: 41%;
-  padding: 1em 2em;
-  text-decoration: none;
+  margin-left: 35%;
+  position: relative;
+  display: inline-block;
+  width: 277px;
+  height: 50px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
   text-transform: uppercase;
-  transition: all .2s ease-in-out;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration:none;
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+  font-size:17px;
+  letter-spacing: 0.045em;
 }
 
-.btn:hover {
-  transform: scale(1.1);
-  border: 0px;
-  outline: none;
-  background: rgba(241, 130, 134, 0.8);
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.btn span{
+background: rgb(255,130,130);
+background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
 }
 
 .content div.skillset {
