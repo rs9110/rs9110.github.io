@@ -106,8 +106,7 @@ body, html {
 }
 
 .content img.about {
-  height: 20%;
-  width: 20%;
+  width: 25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -116,7 +115,6 @@ body, html {
 }
 
 .btn {
-  margin-left: 35%;
   position: relative;
   display: inline-block;
   width: 277px;
