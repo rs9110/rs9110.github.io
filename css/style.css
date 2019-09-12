@@ -58,13 +58,15 @@ body, html {
 }
 
 .bgimg-3 {
-  background-image: url("../img/gate.jpg");
+  background-image: url("../img/mtn.jpg");
   min-height: 400px;
+  opacity: 0.9;
 }
 
 .bgimg-4 {
-  background-image: url("../img/landscape.jpg");
+  background-image: url("../img/plant.jpg");
   min-height: 400px;
+  opacity: 0.9;
 }
 
 .caption {
