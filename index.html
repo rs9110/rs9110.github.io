@@ -46,17 +46,17 @@
       </div>
       <div class="button" align="middle">
         <a href="/resume/Resume.pdf" class="btn">
-        <svg width="277" height="62">
-          <defs>
+          <svg width="277" height="62">
+            <defs>
               <linearGradient id="grad1">
-                  <stop offset="0%" stop-color="#FF8282"/>
-                  <stop offset="100%" stop-color="#E178ED" />
+                <stop offset="0%" stop-color="#FF8282" />
+                <stop offset="100%" stop-color="#E178ED" />
               </linearGradient>
-          </defs>
-           <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
-        </svg>
+            </defs>
+            <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+          </svg>
           <span>View my Résumé</span>
-      </a>
+        </a>
       </div>
     </div>
   </div>
@@ -137,16 +137,31 @@
 
   <div class="bgimg-4">
     <div class="caption">
-      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT INFO</span>
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CONTACT</span>
     </div>
   </div>
 
   <div style="position:relative;">
     <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
       <div class="content">
-        <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal"
-          data-theme="dark" data-vanity="rs9110"><a class="LI-simple-link"
-            href='https://www.linkedin.com/in/rs9110?trk=profile-badge'>Rosis Sharma</a></div>
+        <!-- contact stuff -->
+        <div class="contactContainer">
+          <form id="contact" action="" method="post">
+            <h3>Get In Touch</h3>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Your message here ..." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </div>
   </div>
