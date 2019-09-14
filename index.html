@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="bgimg-1">
+  <div class="bgimg-1" id="load">
     <div class="caption">
       <span class="border">ROSIS SHARMA</span>
       <p class="title">Web & Mobile Developer</p>
@@ -145,9 +145,8 @@
     <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;">
       <div class="content">
         <!-- contact stuff -->
-        <!-- https://formspree.io/rosis.dahal@gmail.com -->
         <div class="contactContainer">
-          <form id="contact" method="POST" action="https://getsimpleform.com/messages?form_api_token=2fbe8fe0f20d976fe6d488a6e5e64c2c">
+          <form id="contact" method="POST" action="https://getsimpleform.com/messages?form_api_token=fa902e612d4adb9de896cfd5d4f6da08">
             <h3>Get In Touch</h3>
             <fieldset>
               <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
@@ -159,11 +158,21 @@
               <textarea placeholder="Your message here ..." tabindex="5" name="message" required></textarea>
             </fieldset>
             <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              <button name="submit" type="submit" id="contact-submit">Submit</button>
             </fieldset>
-            <input type='hidden' name='redirect_to' value='http://google.com' />
+            <input type='hidden' name='redirect_to' value='#sent'/>
           </form>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sent" class="overlay">
+    <div class="popup">
+      <h2>THANK YOU</h2>
+      <a class="close" href="#load">&times;</a>
+      <div class="content">
+        I'll be in contact soon.
       </div>
     </div>
   </div>
