@@ -146,7 +146,7 @@
       <div class="content">
         <!-- contact stuff -->
         <div class="contactContainer">
-          <form id="contact" action="chttps://formspree.io/rosis.dahal@gmail.com" method="post" enctype="text/plain">
+          <form id="contact" method="POST" action="https://formspree.io/rosis.dahal@gmail.com">
             <h3>Get In Touch</h3>
             <fieldset>
               <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
@@ -155,7 +155,7 @@
               <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
             </fieldset>
             <fieldset>
-              <textarea placeholder="Your message here ..." tabindex="5" required name="message"></textarea>
+              <textarea placeholder="Your message here ..." tabindex="5" name="message" required></textarea>
             </fieldset>
             <fieldset>
               <button name="submit" type="submit" id="contact-submit" value="send" data-submit="...Sending">Submit</button>
