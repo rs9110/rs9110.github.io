@@ -384,7 +384,7 @@ fieldset {
 }
 
 .popup {
-  margin: 50% auto;
+  margin: 30% auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -400,7 +400,7 @@ fieldset {
 }
 .popup .close {
   position: absolute;
-  top: 15px;
+  top: 12px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
