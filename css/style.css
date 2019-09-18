@@ -234,6 +234,8 @@ footer {
 }
 footer a{
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
   font-size: 45px;
 }
 
