@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
 * {
   box-sizing: border-box;
 }
@@ -95,14 +96,20 @@ body, html {
 }
 
 .content {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+
+.about {
+  margin-left: 15.5%;
+  margin-right: 15.5%;
   text-align: justify;
 }
 
 .content img {
   height: 15%;
-  width: 15%;
+  width: 25%;
   margin-left: inherit;
   margin-right: inherit;
 }
@@ -114,6 +121,34 @@ body, html {
   margin-right: auto;
   margin-top: 3%;
   margin-bottom: 3%;
+}
+
+.web {
+  display: flex;
+  justify-content: space-between;
+}
+.web h2 {
+  border-left: 6px solid white;
+  background-color: #323e47;
+  padding: 2% 2%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.web a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+.web a:hover {
+  color: #24292F;
+}
+
+.graphic {
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
@@ -196,6 +231,10 @@ p {
 
 footer {
   text-align: center;
+}
+footer a{
+  text-decoration: none;
+  font-size: 45px;
 }
 
 .wrapper {
@@ -467,14 +506,4 @@ fieldset {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
   }
-}
-
-.web {
-  display: flex;
-  justify-content: space-between;
-}
-
-.graphic {
-  display: flex;
-  justify-content: space-between;
 }
