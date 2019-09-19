@@ -125,7 +125,9 @@ body, html {
 
 .web {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction:row;
+  flex-wrap: wrap;
 }
 .web h2 {
   border-left: 6px solid white;
@@ -146,9 +148,29 @@ body, html {
   color: #24292F;
 }
 
-.graphic {
+.other {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.other h2 {
+  border-left: 6px solid white;
+  background-color: #323e47;
+  padding: 2% 2%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.other a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 40px;
+}
+
+.other a:hover {
+  color: #24292F;
 }
 
 .btn {
@@ -507,5 +529,11 @@ fieldset {
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width : 812px) {
+  .about {
+    text-align: left;
   }
 }
